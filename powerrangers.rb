@@ -77,6 +77,8 @@ class PowerRanger < Person
 	end
 
 	def rest
+		@caffeine_level = 100
+		puts "#{@name} is fully rested!"
 	end
 end
 
@@ -130,9 +132,11 @@ def fight_scene
 
 	tommy.punch(ninja_a)
 	tommy.use_megazord(ninja_a)
+	tommy.rest
 
 	rocky.punch(ninja_b)
 	rocky.use_megazord(ninja_b)
+	rocky.rest
 end
 
 
